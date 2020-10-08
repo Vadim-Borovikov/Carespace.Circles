@@ -12,12 +12,12 @@
 <body>
     <div id="visualization"></div>
     <script>
-        function embed() {
+        function embed(dto) {
             // We respin until the visualization container has non-zero area (there are race
             // conditions on Chrome which permit that) and the visualization class is loaded.
             var container = window.document.getElementById("visualization");
             if (container.clientWidth <= 0 || container.clientHeight <= 0 || !window["CarrotSearchCircles"]) {
-                window.setTimeout(embed, 250);
+                window.setTimeout(embed, 250, dto);
                 return;
             }
 
@@ -26,36 +26,42 @@
                 id: "visualization",
                 captureMouseEvents: false,
                 pixelRatio: Math.min(1.5, window.devicePixelRatio || 1),
-                dataObject: {
-                    groups: [
-                        {
-                            label: "Group 1", groups: [
-                                { label: "Group 1.1" },
-                                { label: "Group 1.2" },
-                                { label: "Group 1.3" }
-                            ]
-                        },
-                        {
-                            label: "Group 2", groups: [
-                                { label: "Group 2.1" },
-                                { label: "Group 2.2" },
-                                { label: "Group 2.3" }
-                            ]
-                        },
-                        {
-                            label: "Group 3", groups: [
-                                { label: "Group 3.1" },
-                                { label: "Group 3.2" },
-                                { label: "Group 3.3" }
-                            ]
-                        }
-                    ]
-                }
+                dataObject: dto
             });
 
             window.installResizeHandlerFor(circles, 0);
         }
-        embed();
+
+        dto = {
+            groups: [
+                {
+                    label: "Group 1",
+                    groups: [
+                        { label: "Group 1.1" },
+                        { label: "Group 1.2" },
+                        { label: "Group 1.3" }
+                    ]
+                },
+                {
+                    label: "Group 2",
+                    groups: [
+                        { label: "Group 2.1" },
+                        { label: "Group 2.2" },
+                        { label: "Group 2.3" }
+                    ]
+                },
+                {
+                    label: "Group 3",
+                    groups: [
+                        { label: "Group 3.1" },
+                        { label: "Group 3.2" },
+                        { label: "Group 3.3" }
+                    ]
+                }
+            ]
+        };
+
+        embed(dto);
     </script>
 </body>
 </html>
