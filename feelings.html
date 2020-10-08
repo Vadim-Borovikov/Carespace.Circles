@@ -8,6 +8,7 @@
     </style>
     <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
     <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
     <div id="visualization"></div>
@@ -32,36 +33,9 @@
             window.installResizeHandlerFor(circles, 0);
         }
 
-        dto = {
-            groups: [
-                {
-                    label: "Group 1",
-                    groups: [
-                        { label: "Group 1.1" },
-                        { label: "Group 1.2" },
-                        { label: "Group 1.3" }
-                    ]
-                },
-                {
-                    label: "Group 2",
-                    groups: [
-                        { label: "Group 2.1" },
-                        { label: "Group 2.2" },
-                        { label: "Group 2.3" }
-                    ]
-                },
-                {
-                    label: "Group 3",
-                    groups: [
-                        { label: "Group 3.1" },
-                        { label: "Group 3.2" },
-                        { label: "Group 3.3" }
-                    ]
-                }
-            ]
-        };
-
-        embed(dto);
+        $.getJSON("https://raw.githubusercontent.com/Vadim-Borovikov/FeelingsCircle/main/feelings.json", function(json) {
+            embed(json);
+        });
     </script>
 </body>
 </html>
