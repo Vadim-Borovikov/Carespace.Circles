@@ -22,11 +22,17 @@
                 return;
             }
 
-            // Use the defaults for all parameters.
+            var customAttributes = function(opts, params, vars) {
+                if (params.level === 0) {
+                    vars.groupColor = params.group.gcolor;
+                }
+            };
+
             var circles = new window.CarrotSearchCircles({
                 id: "visualization",
-                captureMouseEvents: false,
-                pixelRatio: Math.min(1.5, window.devicePixelRatio || 1),
+                groupColorDecorator: customAttributes,
+                ringScaling: 1,
+                visibleGroupCount: 8,
                 dataObject: dto
             });
 
