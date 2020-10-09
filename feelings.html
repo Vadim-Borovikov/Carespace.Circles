@@ -9,6 +9,14 @@
     <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
     <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        @font-face {
+            font-family: Futura;
+        }
+        span {
+            font-family: Futura;
+        }
+    </style>
 </head>
 <body>
     <div id="visualization"></div>
@@ -36,6 +44,8 @@
                 angleStart: 225,
                 titleBar: "inscribed",
                 titleBarTextColor: "#000",
+                groupFontFamily: "Futura PT",
+				ratioAspectSwap: 2.0,
                 dataObject: dto
             });
 
