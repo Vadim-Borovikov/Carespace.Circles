@@ -31,9 +31,7 @@
             }
 
             var customAttributes = function(opts, params, vars) {
-                if (params.level === 0) {
-                    vars.groupColor = params.group.gcolor;
-                }
+                vars.groupColor = params.group.gcolor;
             };
 
             var circles = new window.CarrotSearchCircles({

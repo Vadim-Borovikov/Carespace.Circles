@@ -1,172 +1,347 @@
 ﻿{
-  "groups": [
+  "groups":[
     {
-      "label": "Радость",
-      "gcolor": "#ff9c01",
-      "groups": [
+      "label":"Радость",
+      "gcolor":"#ff9c01",
+      "groups":[
         {
-          "label": "Благодарность",
-          "groups": [
-            { "label": "Признательность" },
-            { "label": "Растроганность" }
+          "label":"Благодарность",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Признательность",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Растроганность",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Возбуждение",
-          "groups": [
-            { "label": "Бодрость" },
-            { "label": "Пылкость" },
-            { "label": "Страсть" },
-            { "label": "Энтузиазм" }
+          "label":"Возбуждение",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Бодрость",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Пылкость",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Страсть",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Энтузиазм",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Восторг",
-          "groups": [
-            { "label": "Восхищение" },
-            { "label": "Изумление" },
-            { "label": "Трепет" }
+          "label":"Восторг",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Восхищение",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Изумление",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Трепет",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Надежда",
-          "groups": [
-            { "label": "Воодушевление" },
-            { "label": "Предвкушение" }
+          "label":"Надежда",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Воодушевление",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Предвкушение",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Симпатия",
-          "groups": [
-            { "label": "Доверие" },
-            { "label": "Нежность" },
-            { "label": "Умиление" }
+          "label":"Симпатия",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Доверие",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Нежность",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Умиление",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Спокойствие",
-          "groups": [
-            { "label": "Облегчение" },
-            { "label": "Расслабленность" }
+          "label":"Спокойствие",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Облегчение",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Расслабленность",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Уверенность",
-          "groups": [
-            { "label": "Гордость" },
-            { "label": "Открытость" }
+          "label":"Уверенность",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Гордость",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Открытость",
+              "gcolor":"#fab034"
+            }
           ]
         },
         {
-          "label": "Увлечённость",
-          "groups": [
-            { "label": "Любопытство" },
-            { "label": "Нетерпение" },
-            { "label": "Сосредоточенность" }
+          "label":"Увлечённость",
+          "gcolor":"#ff9933",
+          "groups":[
+            {
+              "label":"Любопытство",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Нетерпение",
+              "gcolor":"#fab034"
+            },
+            {
+              "label":"Сосредоточенность",
+              "gcolor":"#fab034"
+            }
           ]
         }
       ]
     },
     {
-      "label": "Страх",
-      "gcolor": "#b43c97",
-      "groups": [
+      "label":"Страх",
+      "gcolor":"#b43c97",
+      "groups":[
         {
-          "label": "Смущение",
-          "groups": [
-            { "label": "Вина" },
-            { "label": "Стыд" }
+          "label":"Смущение",
+          "gcolor":"#b64b9f",
+          "groups":[
+            {
+              "label":"Вина",
+              "gcolor":"#be5faa"
+            },
+            {
+              "label":"Стыд",
+              "gcolor":"#be5faa"
+            }
           ]
         },
         {
-          "label": "Ранимость",
-          "groups": [
-            { "label": "Бессилие" },
-            { "label": "Беспомощность" }
+          "label":"Ранимость",
+          "gcolor":"#b64b9f",
+          "groups":[
+            {
+              "label":"Бессилие",
+              "gcolor":"#be5faa"
+            },
+            {
+              "label":"Беспомощность",
+              "gcolor":"#be5faa"
+            }
           ]
         },
         {
-          "label": "Тревога",
-          "groups": [
-            { "label": "Обеспокоенность" },
-            { "label": "Ужас" }
+          "label":"Тревога",
+          "gcolor":"#b64b9f",
+          "groups":[
+            {
+              "label":"Обеспокоенность",
+              "gcolor":"#be5faa"
+            },
+            {
+              "label":"Ужас",
+              "gcolor":"#be5faa"
+            }
           ]
         },
         {
-          "label": "Удивление",
-          "groups": [
-            { "label": "Недоумение" },
-            { "label": "Ошеломление" },
-            { "label": "Потерянность" },
-            { "label": "Сомнение" }
+          "label":"Удивление",
+          "gcolor":"#b64b9f",
+          "groups":[
+            {
+              "label":"Недоумение",
+              "gcolor":"#be5faa"
+            },
+            {
+              "label":"Ошеломление",
+              "gcolor":"#be5faa"
+            },
+            {
+              "label":"Потерянность",
+              "gcolor":"#be5faa"
+            },
+            {
+              "label":"Сомнение",
+              "gcolor":"#be5faa"
+            }
           ]
         }
       ]
     },
     {
-      "label": "Печаль",
-      "gcolor": "#0158e5",
-      "groups": [
+      "label":"Печаль",
+      "gcolor":"#0158e5",
+      "groups":[
         {
-          "label": "Грусть",
-          "groups": [
-            { "label": "Боль" },
-            { "label": "Разочарование" },
-            { "label": "Скорбь" },
-            { "label": "Тоска" }
+          "label":"Грусть",
+          "gcolor":"#3765e6",
+          "groups":[
+            {
+              "label":"Боль",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Разочарование",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Скорбь",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Тоска",
+              "gcolor":"#4d76e8"
+            }
           ]
         },
         {
-          "label": "Отстранённость",
-          "groups": [
-            { "label": "Безразличие" },
-            { "label": "Замкнутость" },
-            { "label": "Одиночество" },
-            { "label": "Скука" }
+          "label":"Отстранённость",
+          "gcolor":"#3765e6",
+          "groups":[
+            {
+              "label":"Безразличие",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Замкнутость",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Одиночество",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Скука",
+              "gcolor":"#4d76e8"
+            }
           ]
         },
         {
-          "label": "Уныние",
-          "groups": [
-            { "label": "Сожаление" },
-            { "label": "Отчаяние" }
+          "label":"Уныние",
+          "gcolor":"#3765e6",
+          "groups":[
+            {
+              "label":"Сожаление",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Отчаяние",
+              "gcolor":"#4d76e8"
+            }
           ]
         },
         {
-          "label": "Усталость",
-          "groups": [
-            { "label": "Вялость" },
-            { "label": "Сонливость" }
+          "label":"Усталость",
+          "gcolor":"#3765e6",
+          "groups":[
+            {
+              "label":"Вялость",
+              "gcolor":"#4d76e8"
+            },
+            {
+              "label":"Сонливость",
+              "gcolor":"#4d76e8"
+            }
           ]
         }
       ]
     },
     {
-      "label": "Гнев",
-      "gcolor": "#e50130",
-      "groups": [
+      "label":"Гнев",
+      "gcolor":"#e50130",
+      "groups":[
         {
-          "label": "Злость",
-          "groups": [
-            { "label": "Возмущение" },
-            { "label": "Ненависть" },
-            { "label": "Раздражение" },
-            { "label": "Ярость" }
+          "label":"Злость",
+          "gcolor":"#df193d",
+          "groups":[
+            {
+              "label":"Возмущение",
+              "gcolor":"#e33353"
+            },
+            {
+              "label":"Ненависть",
+              "gcolor":"#e33353"
+            },
+            {
+              "label":"Раздражение",
+              "gcolor":"#e33353"
+            },
+            {
+              "label":"Ярость",
+              "gcolor":"#e33353"
+            }
           ]
         },
         {
-          "label": "Обида",
-          "groups": [
-            { "label": "Зависть" },
-            { "label": "Ревность" }
+          "label":"Обида",
+          "gcolor":"#df193d",
+          "groups":[
+            {
+              "label":"Зависть",
+              "gcolor":"#e33353"
+            },
+            {
+              "label":"Ревность",
+              "gcolor":"#e33353"
+            }
           ]
         },
         {
-          "label": "Неприязнь",
-          "groups": [
-            { "label": "Недоверие" },
-            { "label": "Отвращение" },
-            { "label": "Презрение" }
+          "label":"Неприязнь",
+          "gcolor":"#df193d",
+          "groups":[
+            {
+              "label":"Недоверие",
+              "gcolor":"#e33353"
+            },
+            {
+              "label":"Отвращение",
+              "gcolor":"#e33353"
+            },
+            {
+              "label":"Презрение",
+              "gcolor":"#e33353"
+            }
           ]
         }
       ]
