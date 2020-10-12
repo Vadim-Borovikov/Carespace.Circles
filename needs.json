@@ -1,0 +1,112 @@
+﻿{
+  "groups":[
+    {
+      "label": "Физические",
+      "gcolor": "#ff9c01",
+      "groups": [
+        {
+          "label": "Безопасность",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Вода",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Воздух",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Движение",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Еда",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Жильё",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Отдых",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Прикосновения",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Сексуальная активность",
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Сон",
+          "gcolor": "#faa927"
+        }
+      ]
+    },
+    {
+      "label": "Социальные",
+      "gcolor": "#b43c97",
+      "groups": [
+        {
+          "label": "Близость",
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Быть услышанным",
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Взаимность",
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Взаимопонимание",
+          "gcolor": "#ba56a5"
+        }
+      ]
+    },
+    {
+      "label":"Печаль",
+      "gcolor":"#0158e5",
+      "groups":[
+        {
+          "label":"Грусть",
+          "gcolor":"#436ee7"
+        },
+        {
+          "label":"Отстранённость",
+          "gcolor":"#436ee7"
+        },
+        {
+          "label":"Уныние",
+          "gcolor":"#436ee7"
+        },
+        {
+          "label":"Усталость",
+          "gcolor":"#436ee7"
+        }
+      ]
+    },
+    {
+      "label":"Гнев",
+      "gcolor":"#e50130",
+      "groups":[
+        {
+          "label":"Злость",
+          "gcolor":"#e12748"
+        },
+        {
+          "label":"Обида",
+          "gcolor":"#e12748"
+        },
+        {
+          "label":"Неприязнь",
+          "gcolor":"#e12748"
+        }
+      ]
+    }
+  ]
+}

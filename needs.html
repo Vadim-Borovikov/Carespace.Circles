@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        html, body, #visualization {
+            height: 100vh;
+        }
+    </style>
+    <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
+    <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        @font-face {
+            font-family: Futura;
+        }
+
+        span {
+            font-family: Futura;
+        }
+    </style>
+</head>
+<body>
+    <div id="visualization"></div>
+    <script>
+        function embed(dto) {
+            // We respin until the visualization container has non-zero area (there are race
+            // conditions on Chrome which permit that) and the visualization class is loaded.
+            var container = window.document.getElementById("visualization");
+            if (container.clientWidth <= 0 || container.clientHeight <= 0 || !window["CarrotSearchCircles"]) {
+                window.setTimeout(embed, 250, dto);
+                return;
+            }
+
+            var customAttributes = function (opts, params, vars) {
+                vars.groupColor = params.group.gcolor;
+            };
+
+            var circles = new window.CarrotSearchCircles({
+                id: "visualization",
+                groupColorDecorator: customAttributes,
+                ringScaling: 1,
+                visibleGroupCount: 8,
+                angleStart: 225,
+                titleBar: "inscribed",
+                titleBarTextColor: "#000",
+                groupFontFamily: "Futura PT",
+                ratioAspectSwap: 2,
+                labelColorThreshold: 0,
+                dataObject: dto
+            });
+
+            window.installResizeHandlerFor(circles, 0);
+        }
+
+        $.getJSON("https://raw.githubusercontent.com/Vadim-Borovikov/FeelingsCircle/main/needs.json", function (json) {
+            embed(json);
+        });
+    </script>
+</body>
+</html>
