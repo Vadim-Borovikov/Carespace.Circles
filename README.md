@@ -1,3 +1,3 @@
 # Carespace.Circles
 ## Descriprion:
-Feelings' and needs' lists as cute piecharts.
+NVC's feelings' and needs' lists as cute piecharts.
