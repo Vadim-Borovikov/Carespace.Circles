@@ -59,47 +59,73 @@
             }
           ],
           "gcolor": "#faa927"
-        },
-        {
-          "label": "Наслаждение (1)",
-          "groups": [
-            {
-              "label": "Вкус",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
-              "label": "Запах",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
-              "label": "Красота",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
-              "label": "Развлечение",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
-              "label": "Секс",
-              "groups": [],
-              "gcolor": "#fab646"
-            }
-          ],
-          "gcolor": "#faa927"
         }
       ],
       "gcolor": "#ff9c01"
     },
     {
-      "label": "Самовыражение",
+      "label": "Самореализация",
       "groups": [
+        {
+          "label": "Наслаждение",
+          "groups": [
+            {
+              "label": "Вкус",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Запах",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Красота",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Развлечение",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Секс",
+              "groups": [],
+              "gcolor": "#c46db1"
+            }
+          ],
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Целостность",
+          "groups": [
+            {
+              "label": "Самопринятие",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Самоуважение",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Искренность",
+              "groups": [],
+              "gcolor": "#c46db1"
+            }
+          ],
+          "gcolor": "#ba56a5"
+        },
         {
           "label": "Свобода",
           "groups": [
+            {
+              "label": "Самовыражение",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
             {
               "label": "Выбор",
               "groups": [],
@@ -137,6 +163,11 @@
           "label": "Развитие",
           "groups": [
             {
+              "label": "Вызов",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
               "label": "Компетентность",
               "groups": [],
               "gcolor": "#c46db1"
@@ -153,27 +184,6 @@
             }
           ],
           "gcolor": "#ba56a5"
-        },
-        {
-          "label": "Целостность (1)",
-          "groups": [
-            {
-              "label": "Самопринятие",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Самоуважение",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Искренность",
-              "groups": [],
-              "gcolor": "#c46db1"
-            }
-          ],
-          "gcolor": "#ba56a5"
         }
       ],
       "gcolor": "#b43c97"
@@ -182,90 +192,8 @@
       "label": "Контакт",
       "groups": [
         {
-          "label": "Близость",
-          "groups": [
-            {
-              "label": "Глубокая связь",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Дружба",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Любовь",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Принятие",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Доверие",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Надежность",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            }
-          ],
-          "gcolor": "#436ee7"
-        },
-        {
-          "label": "Поддержка",
-          "groups": [
-            {
-              "label": "Забота",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Понимание",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Сопереживание",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Сочувствие",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Теплота",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Участие",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Эмпатия",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            }
-          ],
-          "gcolor": "#436ee7"
-        },
-        {
           "label": "Сотрудничество",
           "groups": [
-            {
-              "label": "Общение",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
             {
               "label": "Общность",
               "groups": [],
@@ -288,6 +216,68 @@
             }
           ],
           "gcolor": "#436ee7"
+        },
+        {
+          "label": "Поддержка",
+          "groups": [
+            {
+              "label": "Участие",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Понимание",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Забота",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Сопереживание",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Теплота",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            }
+          ],
+          "gcolor": "#436ee7"
+        },
+        {
+          "label": "Близость",
+          "groups": [
+            {
+              "label": "Дружба",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Любовь",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Принятие",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Доверие",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Надёжность",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            }
+          ],
+          "gcolor": "#436ee7"
         }
       ],
       "gcolor": "#0158e5"
@@ -295,6 +285,22 @@
     {
       "label": "Включённость",
       "groups": [
+        {
+          "label": "Причастность",
+          "groups": [
+            {
+              "label": "Гармония",
+              "groups": [],
+              "gcolor": "#e54562"
+            },
+            {
+              "label": "Единение",
+              "groups": [],
+              "gcolor": "#e54562"
+            }
+          ],
+          "gcolor": "#e12748"
+        },
         {
           "label": "Вклад",
           "groups": [
@@ -304,43 +310,7 @@
               "gcolor": "#e54562"
             },
             {
-              "label": "Вызов",
-              "groups": [],
-              "gcolor": "#e54562"
-            },
-            {
-              "label": "Цель",
-              "groups": [],
-              "gcolor": "#e54562"
-            },
-            {
-              "label": "Новизна",
-              "groups": [],
-              "gcolor": "#e54562"
-            },
-            {
-              "label": "Совершать открытия",
-              "groups": [],
-              "gcolor": "#e54562"
-            }
-          ],
-          "gcolor": "#e12748"
-        },
-        {
-          "label": "Причастность",
-          "groups": [
-            {
-              "label": "Гармония?",
-              "groups": [],
-              "gcolor": "#e54562"
-            },
-            {
-              "label": "Единение?",
-              "groups": [],
-              "gcolor": "#e54562"
-            },
-            {
-              "label": "Интеграция в мир",
+              "label": "Открытия",
               "groups": [],
               "gcolor": "#e54562"
             }
