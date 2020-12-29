@@ -59,6 +59,37 @@
             }
           ],
           "gcolor": "#faa927"
+        },
+        {
+          "label": "Наслаждение",
+          "groups": [
+            {
+              "label": "Вкус",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Запах",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Красота",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Развлечение",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Секс",
+              "groups": [],
+              "gcolor": "#fab646"
+            }
+          ],
+          "gcolor": "#faa927"
         }
       ],
       "gcolor": "#ff9c01"
@@ -66,37 +97,6 @@
     {
       "label": "Самореализация",
       "groups": [
-        {
-          "label": "Наслаждение",
-          "groups": [
-            {
-              "label": "Вкус",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Запах",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Красота",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Развлечение",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Секс",
-              "groups": [],
-              "gcolor": "#c46db1"
-            }
-          ],
-          "gcolor": "#ba56a5"
-        },
         {
           "label": "Целостность",
           "groups": [
