@@ -59,17 +59,22 @@
               "gcolor": "#fab646"
             },
             {
+              "label": "Любопытство",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Увлечённость",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
               "label": "Нетерпение",
               "groups": [],
               "gcolor": "#fab646"
             },
             {
               "label": "Предвкушение",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
-              "label": "Энтузиазм",
               "groups": [],
               "gcolor": "#fab646"
             }
@@ -106,33 +111,12 @@
           "label": "Спокойствие",
           "groups": [
             {
-              "label": "Расслабленность",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
               "label": "Уверенность",
               "groups": [],
               "gcolor": "#fab646"
             },
             {
               "label": "Умиротворение",
-              "groups": [],
-              "gcolor": "#fab646"
-            }
-          ],
-          "gcolor": "#faa927"
-        },
-        {
-          "label": "Увлечённость",
-          "groups": [
-            {
-              "label": "Любопытство",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
-            {
-              "label": "Сосредоточенность",
               "groups": [],
               "gcolor": "#fab646"
             }
@@ -245,6 +229,11 @@
             },
             {
               "label": "Беспомощность",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Растерянность",
               "groups": [],
               "gcolor": "#5c82eb"
             }
