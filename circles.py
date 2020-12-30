@@ -61,6 +61,11 @@ colors = ['#ff9c01', '#faa927', '#fab646',
           '#b43c97', '#ba56a5', '#c46db1',
           '#0158e5', '#436ee7', '#5c82eb',
           '#e50130', '#e12748', '#e54562']
-needs = CircleWrapper('needs', colors)
-needs.generate()
-needs.save()
+
+def update(name):
+    circle = CircleWrapper(name, colors.copy())
+    circle.generate()
+    circle.save()
+
+update('feelings')
+update('needs')
