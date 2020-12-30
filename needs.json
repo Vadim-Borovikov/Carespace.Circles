@@ -25,6 +25,11 @@
               "label": "Прикосновения",
               "groups": [],
               "gcolor": "#fab646"
+            },
+            {
+              "label": "Безопасность",
+              "groups": [],
+              "gcolor": "#fab646"
             }
           ],
           "gcolor": "#faa927"
