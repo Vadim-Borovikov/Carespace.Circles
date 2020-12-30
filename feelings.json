@@ -119,12 +119,13 @@
               "label": "Умиротворение",
               "groups": [],
               "gcolor": "#fab646"
-            },
-            {
-              "label": "Увлечённость",
-              "groups": [],
-              "gcolor": "#fab646"
-            },
+            }
+          ],
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Увлечённость",
+          "groups": [
             {
               "label": "Любопытство",
               "groups": [],
