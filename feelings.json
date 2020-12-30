@@ -127,28 +127,18 @@
       "gcolor": "#ff9c01"
     },
     {
-      "label": "Печаль",
+      "label": "Страх",
       "groups": [
         {
-          "label": "Грусть",
+          "label": "Смущение",
           "groups": [
             {
-              "label": "Боль",
+              "label": "Вина",
               "groups": [],
               "gcolor": "#c46db1"
             },
             {
-              "label": "Разочарование",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Скорбь",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Тоска",
+              "label": "Стыд",
               "groups": [],
               "gcolor": "#c46db1"
             }
@@ -156,25 +146,20 @@
           "gcolor": "#ba56a5"
         },
         {
-          "label": "Отстранённость",
+          "label": "Ранимость",
           "groups": [
             {
-              "label": "Безразличие",
+              "label": "Бессилие",
               "groups": [],
               "gcolor": "#c46db1"
             },
             {
-              "label": "Замкнутость",
+              "label": "Беспомощность",
               "groups": [],
               "gcolor": "#c46db1"
             },
             {
-              "label": "Одиночество",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
-              "label": "Скука",
+              "label": "Растерянность",
               "groups": [],
               "gcolor": "#c46db1"
             }
@@ -182,15 +167,41 @@
           "gcolor": "#ba56a5"
         },
         {
-          "label": "Уныние",
+          "label": "Тревога",
           "groups": [
             {
-              "label": "Сожаление",
+              "label": "Обеспокоенность",
               "groups": [],
               "gcolor": "#c46db1"
             },
             {
-              "label": "Отчаяние",
+              "label": "Ужас",
+              "groups": [],
+              "gcolor": "#c46db1"
+            }
+          ],
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Удивление",
+          "groups": [
+            {
+              "label": "Недоумение",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Ошеломление",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Потерянность",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Сомнение",
               "groups": [],
               "gcolor": "#c46db1"
             }
@@ -201,18 +212,28 @@
       "gcolor": "#b43c97"
     },
     {
-      "label": "Страх",
+      "label": "Печаль",
       "groups": [
         {
-          "label": "Смущение",
+          "label": "Грусть",
           "groups": [
             {
-              "label": "Вина",
+              "label": "Боль",
               "groups": [],
               "gcolor": "#5c82eb"
             },
             {
-              "label": "Стыд",
+              "label": "Разочарование",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Скорбь",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Тоска",
               "groups": [],
               "gcolor": "#5c82eb"
             }
@@ -220,20 +241,25 @@
           "gcolor": "#436ee7"
         },
         {
-          "label": "Ранимость",
+          "label": "Отстранённость",
           "groups": [
             {
-              "label": "Бессилие",
+              "label": "Безразличие",
               "groups": [],
               "gcolor": "#5c82eb"
             },
             {
-              "label": "Беспомощность",
+              "label": "Замкнутость",
               "groups": [],
               "gcolor": "#5c82eb"
             },
             {
-              "label": "Растерянность",
+              "label": "Одиночество",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Скука",
               "groups": [],
               "gcolor": "#5c82eb"
             }
@@ -241,41 +267,15 @@
           "gcolor": "#436ee7"
         },
         {
-          "label": "Тревога",
+          "label": "Уныние",
           "groups": [
             {
-              "label": "Обеспокоенность",
+              "label": "Сожаление",
               "groups": [],
               "gcolor": "#5c82eb"
             },
             {
-              "label": "Ужас",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            }
-          ],
-          "gcolor": "#436ee7"
-        },
-        {
-          "label": "Удивление",
-          "groups": [
-            {
-              "label": "Недоумение",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Ошеломление",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Потерянность",
-              "groups": [],
-              "gcolor": "#5c82eb"
-            },
-            {
-              "label": "Сомнение",
+              "label": "Отчаяние",
               "groups": [],
               "gcolor": "#5c82eb"
             }
