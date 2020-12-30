@@ -117,11 +117,6 @@
           "label": "Свобода",
           "groups": [
             {
-              "label": "Самовыражение",
-              "groups": [],
-              "gcolor": "#c46db1"
-            },
-            {
               "label": "Выбор",
               "groups": [],
               "gcolor": "#c46db1"
