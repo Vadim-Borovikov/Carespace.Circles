@@ -8,24 +8,26 @@
             height: 100vh;
         }
         span {
-            font-family: Futura;
+            font-family: FuturaPT;
         }
         @font-face {
-            font-family: Futura;
+            font-family: FuturaPT;
         }
     </style>
-    <div class="circle" id="feelings"></div>
-    <div class="circle" id="needs"></div>
+    <div class="circle" id="feelings-circle"></div>
+    <div class="circle" id="needs-circle"></div>
     <img id="feelings-png"/>
     <img id="needs-png"/>
     <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
     <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        function embed(id, dto) {
+        function embed(name, dto) {
             // We respin until the visualization container has non-zero area (there are race
             // conditions on Chrome which permit that) and the visualization class is loaded.
-            var container = window.document.getElementById(id);
+            var idCircle = name + "-circle";
+            var idPng = name + "-png";
+            var container = window.document.getElementById(idCircle);
             if (container.clientWidth <= 0 || container.clientHeight <= 0 || !window["CarrotSearchCircles"]) {
                 window.setTimeout(embed, 250, dto);
                 return;
@@ -36,20 +38,20 @@
             };
 
             var circles = new window.CarrotSearchCircles({
-                id: id,
+                id: idCircle,
                 groupColorDecorator: customAttributes,
                 ringScaling: 1,
                 visibleGroupCount: 8,
                 angleStart: 225,
                 titleBar: "inscribed",
                 titleBarTextColor: "#000",
-                groupFontFamily: "Futura PT",
+                groupFontFamily: "FuturaPT",
                 ratioAspectSwap: 2,
                 labelColorThreshold: 0,
                 dataObject: dto,
                 onRolloutComplete: function() {
-                    var img = window.document.getElementById(id + "-png");
-                    img.src = circles.get("imageData", { format: "image/png" });
+                    var img = window.document.getElementById(idPng);
+                    img.src = this.get("imageData", { format: "image/png" });
                 }
             });
 
