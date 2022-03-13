@@ -57,10 +57,10 @@ class CircleWrapper:
         with open(self.target, 'w+', encoding = 'utf8') as file:
             json.dump(self.circle, file, ensure_ascii = False, cls = Encoder, indent = 2)
 
-colors = ['#ff9c01', '#faa927', '#fab646',
-          '#b43c97', '#ba56a5', '#c46db1',
-          '#0158e5', '#436ee7', '#5c82eb',
-          '#e50130', '#e12748', '#e54562']
+colors = ['#ffffff', '#0083d6', '#ffffff',
+          '#ffffff', '#0083d6', '#ffffff',
+          '#ffffff', '#0083d6', '#ffffff',
+          '#ffffff', '#0083d6', '#ffffff']
 
 def update(name):
     circle = CircleWrapper(name, colors.copy())
