@@ -3,12 +3,12 @@
     {
       "label": "Осуждаем себя",
       "groups": [],
-      "gcolor": "#ff0000"
+      "gcolor": "#ff00ff"
     },
     {
       "label": "Осуждаем другого",
       "groups": [],
-      "gcolor": "#ff00ff"
+      "gcolor": "#ff0000"
     },
     {
       "label": "Понимаем другого",
@@ -18,7 +18,7 @@
     {
       "label": "Понимаем себя",
       "groups": [],
-      "gcolor": "#ffff00"
+      "gcolor": "#00ff00"
     }
   ],
   "colors": []
