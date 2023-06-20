@@ -71,8 +71,8 @@ colors1 = [['#ff9c01', '#faa927', '#fab646'],
 
 colors2 = [['#ff00ff'],
            ['#ff0000'],
-           ['#00ffff'],
-           ['#0000ff']]
+           ['#00ff00'],
+           ['#00ffff']]
 
 update('feelings', colors1)
 update('needs', colors1)

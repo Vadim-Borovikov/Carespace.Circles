@@ -13,12 +13,12 @@
     {
       "label": "Понимаем другого",
       "groups": [],
-      "gcolor": "#00ffff"
+      "gcolor": "#00ff00"
     },
     {
       "label": "Понимаем себя",
       "groups": [],
-      "gcolor": "#0000ff"
+      "gcolor": "#00ffff"
     }
   ],
   "colors": []
