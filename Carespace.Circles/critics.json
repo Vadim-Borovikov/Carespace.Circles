@@ -3,22 +3,22 @@
     {
       "label": "Осуждаю себя",
       "groups": [],
-      "gcolor": "#ff00ff"
+      "gcolor": "#b43c97"
     },
     {
       "label": "Осуждаю другого",
       "groups": [],
-      "gcolor": "#ff0000"
+      "gcolor": "#e50130"
     },
     {
       "label": "Понимаю другого",
       "groups": [],
-      "gcolor": "#00ff00"
+      "gcolor": "#ff9c01"
     },
     {
       "label": "Понимаю себя",
       "groups": [],
-      "gcolor": "#00ffff"
+      "gcolor": "#0158E5"
     }
   ],
   "colors": []
