@@ -21,9 +21,11 @@
   <ItemGroup>
     <Content Include="circles for print.html" />
     <Content Include="circles.html" />
+    <Content Include="critics.json" />
     <Content Include="feelings.json" />
     <Content Include="feelings.png" />
     <Content Include="feelings.txt" />
+    <Content Include="critics.txt" />
     <Content Include="needs.json" />
     <Content Include="needs.png" />
     <Content Include="needs.txt" />
