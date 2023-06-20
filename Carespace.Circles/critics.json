@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "label": "Осуждаем себя",
+      "groups": [],
+      "gcolor": "#ff0000"
+    },
+    {
+      "label": "Осуждаем другого",
+      "groups": [],
+      "gcolor": "#ff00ff"
+    },
+    {
+      "label": "Понимаем другого",
+      "groups": [],
+      "gcolor": "#00ffff"
+    },
+    {
+      "label": "Понимаем себя",
+      "groups": [],
+      "gcolor": "#ffff00"
+    }
+  ],
+  "colors": []
+}

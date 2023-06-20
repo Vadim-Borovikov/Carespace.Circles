@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import json
 from json import JSONEncoder
 
@@ -31,10 +32,11 @@ class Circle:
             group = Group(line)
             if tabs == 0:
                 top = group
-                top.color(self.colors.pop(0))
+                colors = self.colors.pop(0).copy()
+                top.color(colors.pop(0))
                 self.groups.append(top)
-                middle_color = self.colors.pop(0)
-                bottom_color = self.colors.pop(0)
+                middle_color = colors.pop(0) if len(colors) > 0 else NULL
+                bottom_color = colors.pop(0) if len(colors) > 0 else NULL
             elif tabs == 1:
                 middle = group
                 middle.color(middle_color)
@@ -57,15 +59,21 @@ class CircleWrapper:
         with open(self.target, 'w+', encoding = 'utf8') as file:
             json.dump(self.circle, file, ensure_ascii = False, cls = Encoder, indent = 2)
 
-colors = ['#ff9c01', '#faa927', '#fab646',
-          '#b43c97', '#ba56a5', '#c46db1',
-          '#0158e5', '#436ee7', '#5c82eb',
-          '#e50130', '#e12748', '#e54562']
-
-def update(name):
+def update(name, colors):
     circle = CircleWrapper(name, colors.copy())
     circle.generate()
     circle.save()
 
-update('feelings')
-update('needs')
+colors1 = [['#ff9c01', '#faa927', '#fab646'],
+           ['#b43c97', '#ba56a5', '#c46db1'],
+           ['#0158e5', '#436ee7', '#5c82eb'],
+           ['#e50130', '#e12748', '#e54562']]
+
+colors2 = [['#ff0000'],
+           ['#ff00ff'],
+           ['#00ffff'],
+           ['#ffff00']]
+
+update('feelings', colors1)
+update('needs', colors1)
+update('critics', colors2)
