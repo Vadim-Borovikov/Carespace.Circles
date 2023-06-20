@@ -69,10 +69,10 @@ colors1 = [['#ff9c01', '#faa927', '#fab646'],
            ['#0158e5', '#436ee7', '#5c82eb'],
            ['#e50130', '#e12748', '#e54562']]
 
-colors2 = [['#ff00ff'],
-           ['#ff0000'],
-           ['#00ff00'],
-           ['#00ffff']]
+colors2 = [['#b43c97'],
+           ['#e50130'],
+           ['#ff9c01'],
+           ['#0158E5']]
 
 update('feelings', colors1)
 update('needs', colors1)
