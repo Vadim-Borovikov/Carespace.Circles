@@ -1,0 +1,320 @@
+{
+  "groups": [
+    {
+      "label": "Комфорт",
+      "groups": [
+        {
+          "label": "Здоров'я",
+          "groups": [
+            {
+              "label": "Повітря",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Живлення",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Рух",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Дотики",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Безпека",
+              "groups": [],
+              "gcolor": "#fab646"
+            }
+          ],
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Відпочинок",
+          "groups": [
+            {
+              "label": "Сон",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Легкість",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Розслаблення",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Відновлення",
+              "groups": [],
+              "gcolor": "#fab646"
+            }
+          ],
+          "gcolor": "#faa927"
+        },
+        {
+          "label": "Насолода",
+          "groups": [
+            {
+              "label": "Секс",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Смак",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Запах",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Краса",
+              "groups": [],
+              "gcolor": "#fab646"
+            },
+            {
+              "label": "Розваги",
+              "groups": [],
+              "gcolor": "#fab646"
+            }
+          ],
+          "gcolor": "#faa927"
+        }
+      ],
+      "gcolor": "#ff9c01"
+    },
+    {
+      "label": "Саморозвиток",
+      "groups": [
+        {
+          "label": "Цілісність",
+          "groups": [
+            {
+              "label": "Самоприйняття",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Самоповага",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Щирість",
+              "groups": [],
+              "gcolor": "#c46db1"
+            }
+          ],
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Свобода",
+          "groups": [
+            {
+              "label": "Вибір",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Простір",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Самостійність",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Спонтанність",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Творчість",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Відкритість",
+              "groups": [],
+              "gcolor": "#c46db1"
+            }
+          ],
+          "gcolor": "#ba56a5"
+        },
+        {
+          "label": "Зростання",
+          "groups": [
+            {
+              "label": "Виклик",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Компетентність",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Усвідомленість",
+              "groups": [],
+              "gcolor": "#c46db1"
+            },
+            {
+              "label": "Пізнання",
+              "groups": [],
+              "gcolor": "#c46db1"
+            }
+          ],
+          "gcolor": "#ba56a5"
+        }
+      ],
+      "gcolor": "#b43c97"
+    },
+    {
+      "label": "Контакт",
+      "groups": [
+        {
+          "label": "Співпраця",
+          "groups": [
+            {
+              "label": "Спільність",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Визнання",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Схвалення",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Повага",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            }
+          ],
+          "gcolor": "#436ee7"
+        },
+        {
+          "label": "Підтримка",
+          "groups": [
+            {
+              "label": "Увага",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Розуміння",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Піклування",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Співпереживання",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Тепло",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            }
+          ],
+          "gcolor": "#436ee7"
+        },
+        {
+          "label": "Близькість",
+          "groups": [
+            {
+              "label": "Прийняття",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Дружба",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Любов",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Довіра",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            },
+            {
+              "label": "Надійність",
+              "groups": [],
+              "gcolor": "#5c82eb"
+            }
+          ],
+          "gcolor": "#436ee7"
+        }
+      ],
+      "gcolor": "#0158e5"
+    },
+    {
+      "label": "Залученість",
+      "groups": [
+        {
+          "label": "Причетність",
+          "groups": [
+            {
+              "label": "Гармонія",
+              "groups": [],
+              "gcolor": "#e54562"
+            },
+            {
+              "label": "Єднання",
+              "groups": [],
+              "gcolor": "#e54562"
+            }
+          ],
+          "gcolor": "#e12748"
+        },
+        {
+          "label": "Внесок",
+          "groups": [
+            {
+              "label": "Значущість",
+              "groups": [],
+              "gcolor": "#e54562"
+            },
+            {
+              "label": "Відкриття",
+              "groups": [],
+              "gcolor": "#e54562"
+            }
+          ],
+          "gcolor": "#e12748"
+        }
+      ],
+      "gcolor": "#e50130"
+    }
+  ],
+  "colors": []
+}

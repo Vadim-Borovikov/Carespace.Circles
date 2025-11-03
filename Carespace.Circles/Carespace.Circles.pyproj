@@ -30,9 +30,15 @@
     <Content Include="needs.json" />
     <Content Include="needs.png" />
     <Content Include="needs.txt" />
+    <Content Include="ua\circles.html" />
+    <Content Include="ua\needs.json" />
+    <Content Include="ua\needs.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="circles.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ua\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

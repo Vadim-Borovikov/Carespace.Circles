@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <style type="text/css">
+        html, body, .circle {
+            height: 100vh;
+        }
+        span {
+            font-family: Futura PT;
+        }
+        @font-face {
+            font-family: Futura PT;
+        }
+    </style>
+    <div class="circle" id="feelings-circle"></div>
+    <div class="circle" id="needs-circle"></div>
+    <img id="feelings-png" />
+    <img id="needs-png" />
+    <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
+    <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        function embed(name, dto) {
+            // We respin until the visualization container has non-zero area (there are race
+            // conditions on Chrome which permit that) and the visualization class is loaded.
+            var idCircle = name + "-circle";
+            var idPng = name + "-png";
+            var container = window.document.getElementById(idCircle);
+            if (container.clientWidth <= 0 || container.clientHeight <= 0 || !window["CarrotSearchCircles"]) {
+                window.setTimeout(embed, 250, dto);
+                return;
+            }
+
+            var customAttributes = function (opts, params, vars) {
+                vars.groupColor = params.group.gcolor;
+            };
+
+            var circles = new window.CarrotSearchCircles({
+                id: idCircle,
+                groupColorDecorator: customAttributes,
+                ringScaling: 1,
+                visibleGroupCount: 8,
+                angleStart: 225,
+                titleBar: "inscribed",
+                titleBarTextColor: "#000",
+                groupFontFamily: "Futura PT",
+                ratioAspectSwap: 2,
+                labelColorThreshold: 0,
+                dataObject: dto,
+                onRolloutComplete: function() {
+                    var img = window.document.getElementById(idPng);
+                    img.src = this.get("imageData", { format: "image/png" });
+                }
+            });
+
+            window.installResizeHandlerFor(circles, 0);
+        }
+
+        function load(name) {
+            var url = "https://raw.githubusercontent.com/Vadim-Borovikov/Carespace.Circles/main/Carespace.Circles/ua/" + name + ".json";
+            window.$.getJSON(url, function (json) {
+                embed(name, json);
+            });
+        }
+
+        load("needs");
+    </script>
+</body>
+</html>
