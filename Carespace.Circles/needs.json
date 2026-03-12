@@ -286,15 +286,15 @@
             {
               "label": "Гармония",
               "groups": [],
-              "gcolor": "#ccb52b"
+              "gcolor": "#dfca4b"
             },
             {
               "label": "Единение",
               "groups": [],
-              "gcolor": "#ccb52b"
+              "gcolor": "#dfca4b"
             }
           ],
-          "gcolor": "#c9b200"
+          "gcolor": "#dac105"
         },
         {
           "label": "Вклад",
@@ -302,15 +302,15 @@
             {
               "label": "Значимость",
               "groups": [],
-              "gcolor": "#ccb52b"
+              "gcolor": "#dfca4b"
             },
             {
               "label": "Открытия",
               "groups": [],
-              "gcolor": "#ccb52b"
+              "gcolor": "#dfca4b"
             }
           ],
-          "gcolor": "#c9b200"
+          "gcolor": "#dac105"
         }
       ],
       "gcolor": "#ccba00"
