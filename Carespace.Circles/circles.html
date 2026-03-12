@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head>
-<body>
-    <style type="text/css">
-        html, body, .circle {
-            height: 100vh;
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .circle {
+            display: block;
+        }
+        .png {
+            display: block;
+            max-width: 100%;
         }
         span {
             font-family: Futura PT;
@@ -14,55 +20,84 @@
             font-family: Futura PT;
         }
     </style>
-    <div class="circle" id="feelings-circle"></div>
+</head>
+<body>
+    <div class="circle" id="feelings-circle" ></div>
     <div class="circle" id="needs-circle"></div>
-    <img id="feelings-png" />
-    <img id="needs-png" />
+
+    <img class="png" id="feelings-png" />
+    <img class="png" id="needs-png" />
+
     <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
-    <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
+        var size = 1280;
+
+        function setContainerSize(id) {
+            var el = document.getElementById(id);
+            el.style.width = size + "px";
+            el.style.height = size + "px";
+            return el;
+        }
+
         function embed(name, dto) {
-            // We respin until the visualization container has non-zero area (there are race
-            // conditions on Chrome which permit that) and the visualization class is loaded.
+            function doEmbed() {
+                embed(name, dto);
+            }
+
             var idCircle = name + "-circle";
             var idPng = name + "-png";
-            var container = window.document.getElementById(idCircle);
-            if (container.clientWidth <= 0 || container.clientHeight <= 0 || !window["CarrotSearchCircles"]) {
-                window.setTimeout(embed, 250, dto);
+
+            var container = setContainerSize(idCircle);
+
+            if (!window.CarrotSearchCircles || container.clientWidth <= 0 || container.clientHeight <= 0) {
+                window.setTimeout(doEmbed, 250);
                 return;
             }
 
-            var customAttributes = function (opts, params, vars) {
+            function decorate(opts, params, vars) {
                 vars.groupColor = params.group.gcolor;
-            };
+            }
 
-            var circles = new window.CarrotSearchCircles({
+            function getImg() {
+                var params = {
+                    format: "image/png",
+                    pixelRatio: 1
+                };
+
+                var img = window.document.getElementById(idPng);
+                img.src = this.get("imageData", params);
+            }
+
+            var circleParams = {
                 id: idCircle,
-                groupColorDecorator: customAttributes,
+                groupColorDecorator: decorate,
                 ringScaling: 1,
                 visibleGroupCount: 8,
                 angleStart: 225,
                 titleBar: "inscribed",
                 titleBarTextColor: "#000",
                 groupFontFamily: "Futura PT",
+                diameter: size,
+                centerx: size / 2,
+                centery: size / 2,
                 ratioAspectSwap: 2,
                 labelColorThreshold: 0,
                 dataObject: dto,
-                onRolloutComplete: function() {
-                    var img = window.document.getElementById(idPng);
-                    img.src = this.get("imageData", { format: "image/png" });
-                }
-            });
+                onRolloutComplete: getImg
+            }
 
-            window.installResizeHandlerFor(circles, 0);
+            new window.CarrotSearchCircles(circleParams);
         }
 
         function load(name) {
-            var url = "https://raw.githubusercontent.com/Vadim-Borovikov/Carespace.Circles/main/Carespace.Circles/" + name + ".json";
-            window.$.getJSON(url, function (json) {
+            function onJson(json) {
                 embed(name, json);
-            });
+            }
+
+            var url = "https://raw.githubusercontent.com/Vadim-Borovikov/Carespace.Circles/main/Carespace.Circles/" + name + ".json";
+
+            window.$.getJSON(url, onJson);
         }
 
         load("feelings");
