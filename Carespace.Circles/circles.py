@@ -64,16 +64,21 @@ def update(name, colors):
     circle.generate()
     circle.save()
 
-colors1 = [['#ff9c01', '#faa927', '#fab646'],
-           ['#b43c97', '#ba56a5', '#c46db1'],
-           ['#0158e5', '#436ee7', '#5c82eb'],
-           ['#e50130', '#e12748', '#e54562']]
+colors1 = [['#d67830', '#d7833a', '#dc9251'],
+           ['#8e457c', '#955c89', '#a46d95'],
+           ['#2c51a1', '#5067ab', '#657ab3'],
+           ['#a6303e', '#a83f4e', '#af5463']]
 
-colors2 = [['#b43c97'],
+colors2 = [['#a64568', '#a05377', '#a86489'],
+           ['#54891d', '#6e9a39', '#7ca352'],
+           ['#009e85', '#2ea796', '#4eb09f'],
+           ['#ccba00', '#c9b200', '#ccb52b']]
+
+colors3 = [['#b43c97'],
            ['#e50130'],
            ['#ff9c01'],
            ['#0158E5']]
 
 update('feelings', colors1)
-update('needs', colors1)
-update('critics', colors2)
+update('needs', colors2)
+update('critics', colors3)
