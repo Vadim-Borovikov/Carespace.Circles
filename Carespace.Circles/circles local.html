@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head />
+<body>
+    <div class="circle" id="feelings-circle" ></div>
+    <div class="circle" id="needs-circle"></div>
+
+    <img class="png" id="feelings-png" />
+    <img class="png" id="needs-png" />
+
+    <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        var size = 1280;
+        var fontSize = 50;
+
+        function decorateGroupColor(opts, params, vars) {
+            vars.groupColor = params.group.gcolor;
+        }
+
+        function renderPng(name, circles) {
+            var id = name + "-png";
+
+            var params = {
+                format: "image/png",
+                pixelRatio: 1
+            };
+
+            window.document.getElementById(id).src = circles.get("imageData", params);
+        }
+
+        function render(name, dto) {
+            var id = name + "-circle";
+
+            var container = document.getElementById(id);
+            container.style.width = size + "px";
+            container.style.height = size + "px";
+
+            function renderImage() {
+                renderPng(name, this);
+            }
+
+            var circleParams = {
+                id: id,
+                groupColorDecorator: decorateGroupColor,
+                ringScaling: 1,
+                visibleGroupCount: 8,
+                angleStart: 225,
+                titleBar: "inscribed",
+                titleBarTextColor: "#000",
+                groupFontFamily: "Futura PT",
+                groupMaxFontSize: fontSize,
+                diameter: size,
+                ratioAspectSwap: 2,
+                labelColorThreshold: 0,
+                dataObject: dto,
+                onRolloutComplete: renderImage
+            }
+
+            new window.CarrotSearchCircles(circleParams);
+        }
+
+        function load(name) {
+            function onJson(json) {
+                render(name, json);
+            }
+
+            var url = "https://raw.githubusercontent.com/Vadim-Borovikov/Carespace.Circles/main/Carespace.Circles/" + name + ".json";
+
+            window.$.getJSON(url, onJson);
+        }
+
+        load("feelings");
+        load("needs");
+    </script>
+</body>
+</html>

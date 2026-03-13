@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .circle {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle" id="feelings-circle"></div>
+    <div class="circle" id="needs-circle"></div>
+
+    <script src="https://get.carrotsearch.com/circles/latest/carrotsearch.circles.js"></script>
+    <script src="https://get.carrotsearch.com/circles/latest/demos/assets/js/carrotsearch.examples.onresizehook.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        var fontSize = 50;
+
+        function decorateGroupColor(opts, params, vars) {
+            vars.groupColor = params.group.gcolor;
+        }
+
+        function render(name, dto) {
+            var id = name + "-circle";
+
+            var circleParams = {
+                id: id,
+                groupColorDecorator: decorateGroupColor,
+                ringScaling: 1,
+                visibleGroupCount: 8,
+                angleStart: 225,
+                titleBar: "inscribed",
+                titleBarTextColor: "#000",
+                groupFontFamily: "Futura PT",
+                groupMaxFontSize: fontSize,
+                ratioAspectSwap: 2,
+                labelColorThreshold: 0,
+                dataObject: dto
+            }
+
+            var circles = new window.CarrotSearchCircles(circleParams);
+
+            window.installResizeHandlerFor(circles, 0);
+        }
+
+        function load(name) {
+            function onJson(json) {
+                render(name, json);
+            }
+
+            var url = "https://raw.githubusercontent.com/Vadim-Borovikov/Carespace.Circles/main/Carespace.Circles/" + name + ".json";
+
+            window.$.getJSON(url, onJson);
+        }
+
+        load("feelings");
+        load("needs");
+    </script>
+</body>
+</html>

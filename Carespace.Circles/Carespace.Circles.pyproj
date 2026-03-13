@@ -19,14 +19,15 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="circles tilda.html" />
     <Content Include="critics for print.html" />
     <Content Include="critics.html" />
     <Content Include="circles for print.html" />
-    <Content Include="circles.html" />
     <Content Include="feelings.json" />
     <Content Include="feelings.png" />
     <Content Include="feelings.txt" />
     <Content Include="critics.txt" />
+    <Content Include="circles local.html" />
     <Content Include="needs.json" />
     <Content Include="needs.png" />
     <Content Include="needs.txt" />
